@@ -1,0 +1,187 @@
+/* Gaya khusus layar Cari Karya */
+
+.cari-atas {
+  padding: var(--jarak-5) var(--jarak-4) var(--jarak-3);
+}
+
+.cari-atas .judul-layar {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--warna-teks);
+}
+
+.cari__konten {
+  display: flex;
+  flex-direction: column;
+  gap: var(--jarak-3);
+  padding: 0 var(--jarak-4) var(--jarak-5);
+}
+
+/* ---------- Bilah Input Pencarian ---------- */
+.bilah-cari {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--warna-putih);
+  border: 1.5px solid #CFE3F1;
+  border-radius: var(--sudut-sedang, 12px);
+  padding: 0 var(--jarak-3);
+  height: 48px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bilah-cari:focus-within {
+  border-color: var(--warna-utama);
+  box-shadow: 0 0 0 3px rgba(1, 121, 187, 0.12);
+}
+
+.bilah-cari__ikon {
+  display: flex;
+  align-items: center;
+  color: var(--warna-utama);
+  margin-right: var(--jarak-2);
+  flex-shrink: 0;
+}
+
+.bilah-cari__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--warna-teks);
+  outline: none;
+  min-width: 0;
+}
+
+.bilah-cari__input::placeholder {
+  color: var(--warna-redup);
+}
+
+.bilah-cari__bersihkan {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--warna-redup);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bilah-cari__bersihkan:hover {
+  color: var(--warna-teks);
+}
+
+/* ---------- Chip Garis ---------- */
+.deret-chip--geser {
+  display: flex;
+  gap: var(--jarak-2);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+
+.deret-chip--geser::-webkit-scrollbar {
+  display: none;
+}
+
+.chip--garis {
+  height: 36px;
+  padding: 0 16px;
+  background: var(--warna-putih);
+  border: 1.5px solid #CFE3F1;
+  color: var(--warna-utama);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: var(--sudut-pil);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.chip--garis[aria-pressed="true"] {
+  background: var(--warna-utama);
+  color: var(--warna-putih);
+  border-color: var(--warna-utama);
+}
+
+/* ---------- Label Status / Hasil ---------- */
+.cari-status {
+  margin-top: var(--jarak-2);
+}
+
+.cari-status__teks {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--warna-redup);
+}
+
+/* ---------- Daftar Baris Karya (List View) ---------- */
+.daftar-karya-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-karya {
+  display: flex;
+  align-items: center;
+  gap: var(--jarak-3);
+  padding: var(--jarak-3) 0;
+  border-bottom: 1px solid var(--warna-garis);
+  text-decoration: none;
+  color: var(--warna-teks);
+  transition: opacity 0.15s ease;
+}
+
+.item-karya:last-child {
+  border-bottom: none;
+}
+
+.item-karya__thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--sudut-sedang);
+  background: var(--kat-bg, var(--warna-latar));
+  color: var(--kat-fg, var(--warna-tua));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.item-karya__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-karya__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.item-karya__judul {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--warna-teks);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-karya__sub {
+  font-size: 13px;
+  color: var(--warna-redup);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

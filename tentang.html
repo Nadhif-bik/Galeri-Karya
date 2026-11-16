@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0179BB">
+  <title>Tentang · Galeri Karya STMM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/halaman/tentang.css">
+</head>
+<body data-halaman="tentang">
+  <div class="app">
+    <!-- Judul Layar -->
+    <header class="tentang-atas">
+      <h1 class="judul-layar">Tentang</h1>
+    </header>
+
+    <main class="tentang__konten">
+      <!-- Banner Kartu Identitas Galeri -->
+      <div class="tentang-hero">
+        <img src="assets/logo-stmm.png" alt="Logo STMM" class="tentang-hero__logo">
+        <h2 class="tentang-hero__judul">Galeri Karya STMM</h2>
+        <p class="tentang-hero__sub">Etalase digital karya mahasiswa: film, video, podcast, foto, dan gim.</p>
+      </div>
+
+      <!-- Tentang Galeri -->
+      <section class="bagian">
+        <h3 class="judul-bagian">Tentang Galeri</h3>
+        <p class="teks-isi">Galeri ini menampilkan karya pilihan mahasiswa dari berbagai mata kuliah. Setiap karya dikurasi tim kurator dan hanya tayang dengan izin kreatornya.</p>
+      </section>
+
+      <!-- Punya karya untuk ditampilkan? -->
+      <section class="bagian">
+        <h3 class="judul-bagian">Punya karya untuk ditampilkan?</h3>
+        <p class="teks-isi">Ajukan karyamu lengkap dengan link video dan izin publikasi.</p>
+        <button type="button" class="tombol tombol--utama tombol--penuh" id="tombol-ajukan" style="margin-top: 4px;">Ajukan Karya</button>
+      </section>
+
+      <!-- Menu Tautan Terkelompok (Grouped List) -->
+      <div class="menu-grup" role="navigation" aria-label="Tautan informasi">
+        <a href="#kebijakan" class="menu-grup__item" id="menu-kebijakan">
+          <span class="menu-grup__label">Kebijakan Karya & Hak Cipta</span>
+          <span class="menu-grup__panah" id="panah-kebijakan"></span>
+        </a>
+        <a href="#tim" class="menu-grup__item" id="menu-tim">
+          <span class="menu-grup__label">Tim Pengembang</span>
+          <span class="menu-grup__panah" id="panah-tim"></span>
+        </a>
+        <a href="#kontak" class="menu-grup__item" id="menu-kontak">
+          <span class="menu-grup__label">Kontak</span>
+          <span class="menu-grup__panah" id="panah-kontak"></span>
+        </a>
+      </div>
+
+      <!-- Catatan Kaki (Footer) -->
+      <div class="tentang-footer">
+        <p class="tentang-footer__teks">Dibuat oleh mahasiswa Mobile Computing STMM · v0.1</p>
+      </div>
+    </main>
+
+    <!-- Navigasi Bawah -->
+    <nav class="nav-bawah" id="nav-bawah" aria-label="Navigasi utama"></nav>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/halaman/tentang.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0179BB">
+  <title>Cari Karya · Galeri Karya STMM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/halaman/cari.css">
+</head>
+<body data-halaman="cari">
+  <div class="app">
+    <!-- Judul Layar -->
+    <header class="cari-atas">
+      <h1 class="judul-layar">Cari Karya</h1>
+    </header>
+
+    <main class="cari__konten">
+      <!-- Bilah Input Pencarian -->
+      <div class="bilah-cari">
+        <span class="bilah-cari__ikon" id="ikon-cari-wadah"></span>
+        <input type="search" id="input-cari" class="bilah-cari__input" placeholder="Judul karya atau nama kreator" autocomplete="off" spellcheck="false" aria-label="Cari judul karya atau nama kreator">
+        <button type="button" id="tombol-bersihkan" class="bilah-cari__bersihkan" aria-label="Bersihkan pencarian" style="display: none;">×</button>
+      </div>
+
+      <!-- Deret Chip Kategori (Garis) -->
+      <div class="deret-chip deret-chip--geser" id="daftar-chip-cari" role="toolbar" aria-label="Filter kategori"></div>
+
+      <!-- Status Hasil / Judul Sub -->
+      <div class="cari-status">
+        <span class="cari-status__teks" id="label-status">Karya terbaru</span>
+      </div>
+
+      <!-- Daftar Karya (List View) -->
+      <div class="daftar-karya-list" id="daftar-karya"></div>
+    </main>
+
+    <!-- Navigasi Bawah -->
+    <nav class="nav-bawah" id="nav-bawah" aria-label="Navigasi utama"></nav>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/halaman/cari.js"></script>
+</body>
+</html>

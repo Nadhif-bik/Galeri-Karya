@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0179BB">
+  <title>Kategori Karya · Galeri Karya STMM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/halaman/kategori.css">
+</head>
+<body data-halaman="kategori">
+  <div class="app">
+    <!-- Judul Layar -->
+    <header class="kategori-atas">
+      <h1 class="judul-layar">Kategori</h1>
+    </header>
+
+    <main class="kategori__konten">
+      <!-- Deret Chip Filter -->
+      <div class="deret-chip" id="daftar-chip" role="toolbar" aria-label="Filter kategori"></div>
+
+      <!-- Baris Ringkasan & Urutan -->
+      <div class="kategori__baris-info">
+        <span class="kategori__ringkasan" id="ringkasan-karya">Memuat karya...</span>
+        <div class="kategori__urut-wadah">
+          <select id="pilih-urutan" class="kategori__pilih-urut" aria-label="Urutkan karya">
+            <option value="terbaru">Terbaru</option>
+            <option value="terlama">Terlama</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+          <svg class="kategori__urut-panah" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
+      </div>
+
+      <!-- Grid Karya -->
+      <div class="grid-2" id="grid-karya"></div>
+    </main>
+
+    <!-- Navigasi Bawah -->
+    <nav class="nav-bawah" id="nav-bawah" aria-label="Navigasi utama"></nav>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/halaman/kategori.js"></script>
+</body>
+</html>

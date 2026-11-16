@@ -1,0 +1,61 @@
+/* Gaya khusus layar Kategori */
+
+.kategori-atas {
+  padding: var(--jarak-5) var(--jarak-4) var(--jarak-3);
+}
+
+.kategori-atas .judul-layar {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--warna-teks);
+}
+
+.kategori__konten {
+  display: flex;
+  flex-direction: column;
+  gap: var(--jarak-4);
+  padding: 0 var(--jarak-4) var(--jarak-5);
+}
+
+/* ---------- Bilah Ringkasan & Pengurutan ---------- */
+.kategori__baris-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--jarak-1);
+}
+
+.kategori__ringkasan {
+  font-size: 14px;
+  color: var(--warna-redup);
+  font-weight: 600;
+}
+
+.kategori__urut-wadah {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.kategori__pilih-urut {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--warna-utama);
+  padding-right: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.kategori__urut-panah {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--warna-utama);
+}

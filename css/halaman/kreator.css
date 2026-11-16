@@ -1,0 +1,117 @@
+/* Gaya khusus layar Profil Kreator */
+
+/* ---------- Hero Section (Latar Biru Tua) ---------- */
+.kreator-hero {
+  background-color: var(--warna-tua, #005A92);
+  color: var(--warna-putih);
+  padding-bottom: 42px;
+  position: relative;
+}
+
+.kreator-hero__bilah {
+  color: var(--warna-putih);
+}
+
+.kreator-hero__kembali {
+  color: var(--warna-putih);
+}
+
+.kreator-hero__judul {
+  color: var(--warna-putih);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.kreator-hero__profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--jarak-2) var(--jarak-4) 0;
+  gap: 8px;
+}
+
+.kreator-hero__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--sudut-pil);
+  background: var(--warna-putih);
+  border: 4px solid var(--warna-aksen, #EDBB1A);
+  color: var(--warna-tua, #005A92);
+  font-size: 28px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.kreator-hero__nama {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--warna-putih);
+  line-height: 1.25;
+  margin-top: 4px;
+}
+
+.kreator-hero__sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* ---------- 3 Kartu Statistik Mengambang ---------- */
+.kreator-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--jarak-3);
+  padding: 0 var(--jarak-4);
+  margin-top: -28px;
+  position: relative;
+  z-index: 2;
+}
+
+.kreator-stats__kartu {
+  background: var(--warna-putih);
+  border-radius: var(--sudut-besar);
+  padding: 14px var(--jarak-2);
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 50, 100, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kreator-stats__angka {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--warna-tua);
+  line-height: 1.2;
+}
+
+.kreator-stats__label {
+  font-size: 12px;
+  color: var(--warna-redup);
+  font-weight: 600;
+}
+
+/* ---------- Konten Utama (Tentang & Karya) ---------- */
+.kreator-konten {
+  padding: var(--jarak-5) var(--jarak-4) var(--jarak-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--jarak-5);
+}
+
+.kreator-konten .judul-bagian {
+  font-size: var(--teks-bagian);
+  font-weight: 800;
+  color: var(--warna-teks);
+  margin-bottom: 4px;
+}
+
+.kreator-konten .teks-isi {
+  font-size: var(--teks-isi);
+  line-height: 1.6;
+  color: var(--warna-teks-isi);
+}
